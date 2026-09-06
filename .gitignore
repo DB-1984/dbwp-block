@@ -1,0 +1,12 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# WordPress/Local specific
+*.log
+sftp-config.json
+
+# Potential Build Tools (if you add them later)
+node_modules/
+dist/
+vendor/
