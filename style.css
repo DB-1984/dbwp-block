@@ -144,7 +144,7 @@ Tags:
     padding: clamp(2rem, 6vw, 5rem);
 
     color: var(--wp--preset--color--ink);
-    background: var(--wp--preset--color--paper);
+    background: #144a4d;
 
     border-left: 6px solid var(--wp--preset--color--ink);
 }
