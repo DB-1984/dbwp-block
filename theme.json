@@ -1,34 +1,89 @@
 {
-	"$schema": "https://schemas.wp.org/wp/7.1/theme.json",
-	"settings": {
-		"appearanceTools": true,
-		"layout": {
-			"contentSize": "620px",
-			"wideSize": "1000px"
-		},
-		"spacing": {
-			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
-		},
-		"typography": {
-			"fontFamilies": [
-				{
-					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-					"name": "System Font",
-					"slug": "system-font"
-				}
-			]
-		},
-		"useRootPaddingAwareAlignments": true
-	},
-	"templateParts": [
-		{
-			"area": "header",
-			"name": "header"
-		},
-		{
-			"area": "footer",
-			"name": "footer"
-		}
-	],
-	"version": 3
+  "$schema": "https://schemas.wp.org/wp/7.1/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "620px",
+      "wideSize": "1000px"
+    },
+    "useRootPaddingAwareAlignments": true,
+    "color": {
+      "palette": [
+        { "slug": "ink", "color": "#141414", "name": "Ink" },
+        { "slug": "paper", "color": "#FBEEDB", "name": "Paper" },
+        { "slug": "accent", "color": "#77777d", "name": "Accent" },
+        { "slug": "white", "color": "#FFFFFF", "name": "White" }
+      ]
+    },
+    "spacing": {
+      "units": ["%", "px", "em", "rem", "vh", "vw"],
+      "spacingSizes": [
+        { "slug": "20", "size": "0.5rem", "name": "XS" },
+        { "slug": "30", "size": "1rem", "name": "S" },
+        { "slug": "40", "size": "1.5rem", "name": "M" },
+        { "slug": "50", "size": "2rem", "name": "L" },
+        { "slug": "60", "size": "3rem", "name": "XL" },
+        { "slug": "70", "size": "4rem", "name": "2XL" },
+        { "slug": "80", "size": "6rem", "name": "3XL" }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+          "name": "System Font",
+          "slug": "system-font"
+        },
+        {
+          "fontFamily": "'Fraunces', Georgia, 'Times New Roman', serif",
+          "name": "Display",
+          "slug": "display"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem)",
+          "name": "Small"
+        },
+        {
+          "slug": "medium",
+          "size": "clamp(1rem, 0.95rem + 0.25vw, 1.125rem)",
+          "name": "Medium"
+        },
+        {
+          "slug": "large",
+          "size": "clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem)",
+          "name": "Large"
+        },
+        {
+          "slug": "x-large",
+          "size": "clamp(1.75rem, 1.4rem + 1.75vw, 2.5rem)",
+          "name": "X-Large"
+        },
+        {
+          "slug": "xx-large",
+          "size": "clamp(2.5rem, 1.8rem + 3.5vw, 4rem)",
+          "name": "XX-Large"
+        },
+        {
+          "slug": "huge",
+          "size": "clamp(3rem, 2rem + 5vw, 6rem)",
+          "name": "Huge"
+        }
+      ]
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header"
+    },
+    {
+      "area": "footer",
+      "name": "footer"
+    }
+  ]
 }
