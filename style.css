@@ -134,6 +134,65 @@ Tags:
 }
 
 /* ==========================================================================
+   Service folder cards
+   ========================================================================== */
+
+   .services-section{    
+    background-image: url('assets/images/pc.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+   .service-card {
+	position: relative;
+    background-color: rgba(35, 35, 35, 0.564);
+	isolation: isolate;
+	overflow: visible;
+    color: white;
+    min-height: 36cqi!important;
+	margin-block: 1.5rem!important;
+	border: 0 !important;
+	border-top-left-radius: 0 !important;
+}
+
+@media(width < 782px){
+    .service-card{
+    background-size: cover;
+    }
+}
+
+@media(width >= 782px){
+    .service-card{
+    background-size: contain;
+    }
+}
+
+/* The folder tab. */
+
+.service-card::before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: -1.5rem;
+	left: 0;
+
+	width: min(50%, 16rem);
+	height: 2rem;
+
+	background: inherit;
+	border-radius: 0.85rem 1.5rem 0 0;
+
+	pointer-events: none;
+}
+
+/* Keep the card content above the pseudo-element. */
+
+.service-card > * {
+	position: relative;
+	z-index: 1;
+}
+
+/* ==========================================================================
    Contact Form Block
    ========================================================================== */
 
