@@ -1,191 +1,533 @@
 <!-- wp:cover {"dimRatio":30,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","align":"full","className":"sl-hero","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignfull sl-hero" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:100vh">
+<div class="wp-block-cover alignfull sl-hero"
+    style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:100vh"><span aria-hidden="true"
+        class="wp-block-cover__background has-ink-background-color has-background-dim-30 has-background-dim"></span>
+    <div class="wp-block-cover__inner-container">
+        <!-- wp:template-part {"slug":"header","theme":"dbwp-block","tagName":"header"} /-->
 
-	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim"></span>
+        <!-- wp:group {"className":"sl-hero__content","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|40","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group sl-hero__content"
+            style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)">
+            <!-- wp:paragraph {"className":"sl-hero__kicker has-white-color has-text-color","fontSize":"small"} -->
+            <p class="sl-hero__kicker has-white-color has-text-color has-small-font-size">Optional kicker text</p>
+            <!-- /wp:paragraph -->
 
-	<div class="wp-block-cover__inner-container">
+            <!-- wp:heading {"level":1,"className":"sl-hero__headline has-white-color has-text-color has-display-font-family","fontSize":"huge","fontFamily":"display"} -->
+            <h1
+                class="wp-block-heading sl-hero__headline has-white-color has-text-color has-display-font-family has-huge-font-size">
+                A massive, image-led headline goes here</h1>
+            <!-- /wp:heading -->
 
-		<!-- wp:template-part {"slug":"header","theme":"dbwp-block","tagName":"header"} /-->
+            <!-- wp:paragraph {"className":"sl-hero__subhead has-white-color has-text-color","fontSize":"large"} -->
+            <p class="sl-hero__subhead has-white-color has-text-color has-large-font-size">One supporting sentence
+                describing what this page is about.</p>
+            <!-- /wp:paragraph -->
 
-		<!-- wp:group {"className":"sl-hero__content","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|40","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-		<div class="wp-block-group sl-hero__content" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)">
-
-			<!-- wp:paragraph {"className":"sl-hero__kicker has-white-color has-text-color","fontSize":"small"} -->
-			<p class="sl-hero__kicker has-white-color has-text-color has-small-font-size">Optional kicker text</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:heading {"level":1,"className":"sl-hero__headline has-white-color has-text-color has-display-font-family","fontSize":"huge","fontFamily":"display"} -->
-			<h1 class="wp-block-heading sl-hero__headline has-white-color has-text-color has-display-font-family has-huge-font-size">A massive, image-led headline goes here</h1>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph {"className":"sl-hero__subhead has-white-color has-text-color","fontSize":"large"} -->
-			<p class="sl-hero__subhead has-white-color has-text-color has-large-font-size">One supporting sentence describing what this page is about.</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","fontSize":"medium"} -->
-			<p class="sl-hero__cta has-white-color has-text-color has-medium-font-size"><a href="#">Learn more →</a></p>
-			<!-- /wp:paragraph -->
-
-		</div>
-		<!-- /wp:group -->
-
-	</div>
+            <!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","fontSize":"medium"} -->
+            <p class="sl-hero__cta has-white-color has-text-color has-medium-font-size"><a href="#">Learn more →</a></p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+    </div>
 </div>
 <!-- /wp:cover -->
 
+<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","backgroundColor":"ink","textColor":"white","className":"services-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<section
+    class="wp-block-group alignfull services-section has-white-color has-ink-background-color has-text-color has-background"
+    style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","backgroundColor":"ink","textColor":"white","className":"services-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull services-section has-white-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
+    <!-- wp:group {"align":"wide","className":"services-shell","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide services-shell">
 
-	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide">
+        <!-- wp:group {"className":"services-intro","layout":{"type":"default"}} -->
+        <div class="wp-block-group services-intro">
 
-		<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|30"},"margin":{"bottom":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--50)">
+            <!-- wp:group {"className":"services-intro__copy","layout":{"type":"default"}} -->
+            <div class="wp-block-group services-intro__copy">
 
-			<!-- wp:column -->
-			<div class="wp-block-column">
+                <!-- wp:paragraph {"className":"services-eyebrow"} -->
+                <p class="services-eyebrow">What I can help with</p>
+                <!-- /wp:paragraph -->
 
-				<!-- wp:group {"className":"service-card","backgroundColor":"paper","textColor":"ink","style":{"border":{"radius":"6px"},"dimensions":{"minHeight":"430px"},"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|40","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"space-between"}} -->
-				<div class="wp-block-group service-card has-color-white has-text-color has-background" style="border-radius:6px;min-height:430px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+                <!-- wp:heading {"className":"services-heading"} -->
+                <h2 class="wp-block-heading services-heading">
+                    WordPress help,<br>without the agency theatre.
+                </h2>
+                <!-- /wp:heading -->
 
-					<!-- wp:group {"layout":{"type":"default"}} -->
-					<div class="wp-block-group">
+            </div>
+            <!-- /wp:group -->
 
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"clamp(2.5rem, 5vw, 4rem)","fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"bottom":"0.35em"}}}} -->
-						<p style="margin-bottom:0.35em;font-size:clamp(2.5rem, 5vw, 4rem);font-weight:300;line-height:1">01.</p>
-						<!-- /wp:paragraph -->
+            <!-- wp:group {"className":"services-intro__summary","layout":{"type":"default"}} -->
+            <div class="wp-block-group services-intro__summary">
 
-						<!-- wp:heading {"style":{"typography":{"fontSize":"clamp(3rem, 6vw, 5rem)","fontWeight":"300","lineHeight":"0.95"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-						<h2 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-size:clamp(3rem, 6vw, 5rem);font-weight:300;line-height:0.95">WordPress<br>Site Design</h2>
-						<!-- /wp:heading -->
+                <!-- wp:paragraph {"fontSize":"large"} -->
+                <p class="has-large-font-size">
+                    From complete websites to awkward bugs, custom functionality and better content, I’ll help you work
+                    out what’s needed and build a sensible solution.
+                </p>
+                <!-- /wp:paragraph -->
 
-					</div>
-					<!-- /wp:group -->
+                <!-- wp:buttons -->
+                <div class="wp-block-buttons">
 
-					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.45"}},"fontSize":"medium"} -->
-					<p class="has-medium-font-size" style="line-height:1.45">Need a modern, functional, easy-to-maintain and professional-looking website? We’ll work with you to design an <strong><u>intuitive, engaging and optimised solution</u></strong>.</p>
-					<!-- /wp:paragraph -->
+                    <!-- wp:button -->
+                    <div class="wp-block-button">
+                        <a class="wp-block-button__link wp-element-button" href="#contact">
+                            Tell me what you need
+                        </a>
+                    </div>
+                    <!-- /wp:button -->
 
-				</div>
-				<!-- /wp:group -->
+                    <!-- wp:button {"className":"is-style-outline"} -->
+                    <div class="wp-block-button is-style-outline">
+                        <a class="wp-block-button__link wp-element-button" href="#how-it-works">
+                            See how it works
+                        </a>
+                    </div>
+                    <!-- /wp:button -->
 
-			</div>
-			<!-- /wp:column -->
+                </div>
+                <!-- /wp:buttons -->
 
+            </div>
+            <!-- /wp:group -->
 
-			<!-- wp:column -->
-			<div class="wp-block-column">
-
-				<!-- wp:group {"className":"service-card","backgroundColor":"paper","textColor":"ink","style":{"border":{"radius":"6px"},"dimensions":{"minHeight":"430px"},"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|40","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"space-between"}} -->
-				<div class="wp-block-group service-card has-color-white has-text-color has-background" style="border-radius:6px;min-height:430px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
-
-					<!-- wp:group {"layout":{"type":"default"}} -->
-					<div class="wp-block-group">
-
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"clamp(2.5rem, 5vw, 4rem)","fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"bottom":"0.35em"}}}} -->
-						<p style="margin-bottom:0.35em;font-size:clamp(2.5rem, 5vw, 4rem);font-weight:300;line-height:1">02.</p>
-						<!-- /wp:paragraph -->
-
-						<!-- wp:heading {"style":{"typography":{"fontSize":"clamp(3rem, 6vw, 5rem)","fontWeight":"300","lineHeight":"0.95"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-						<h2 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-size:clamp(3rem, 6vw, 5rem);font-weight:300;line-height:0.95">Fixes &amp;<br>Custom Plugins</h2>
-						<!-- /wp:heading -->
-
-					</div>
-					<!-- /wp:group -->
-
-					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.45"}},"fontSize":"medium"} -->
-					<p class="has-medium-font-size" style="line-height:1.45">Having issues with your WordPress or WooCommerce website? In need of some custom code? We’ll work with you to design a <strong><u>customised and easy-to-implement solution</u></strong>.</p>
-					<!-- /wp:paragraph -->
-
-				</div>
-				<!-- /wp:group -->
-
-			</div>
-			<!-- /wp:column -->
-
-		</div>
-		<!-- /wp:columns -->
+        </div>
+        <!-- /wp:group -->
 
 
-		<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|30"}}}} -->
-		<div class="wp-block-columns">
+        <!-- wp:group {"className":"services-grid","layout":{"type":"default"}} -->
+        <div class="wp-block-group services-grid">
 
-			<!-- wp:column -->
-			<div class="wp-block-column">
+            <!-- wp:group {"className":"service-card service-card--featured","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
+            <div
+                class="wp-block-group service-card service-card--featured has-ink-color has-paper-background-color has-text-color has-background">
 
-				<!-- wp:group {"className":"service-card","backgroundColor":"paper","textColor":"ink","style":{"border":{"radius":"6px"},"dimensions":{"minHeight":"430px"},"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|40","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"space-between"}} -->
-				<div class="wp-block-group service-card has-color-white h-color has-text-color has-background" style="border-radius:6px;min-height:430px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+                <!-- wp:group {"className":"service-card__content","layout":{"type":"default"}} -->
+                <div class="wp-block-group service-card__content">
 
-					<!-- wp:group {"layout":{"type":"default"}} -->
-					<div class="wp-block-group">
+                    <!-- wp:paragraph {"className":"service-card__number"} -->
+                    <p class="service-card__number">01 / DESIGN</p>
+                    <!-- /wp:paragraph -->
 
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"clamp(2.5rem, 5vw, 4rem)","fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"bottom":"0.35em"}}}} -->
-						<p style="margin-bottom:0.35em;font-size:clamp(2.5rem, 5vw, 4rem);font-weight:300;line-height:1">03.</p>
-						<!-- /wp:paragraph -->
+                    <!-- wp:heading {"level":3,"className":"service-card__title"} -->
+                    <h3 class="wp-block-heading service-card__title">
+                        WordPress<br>Site Design
+                    </h3>
+                    <!-- /wp:heading -->
 
-						<!-- wp:heading {"style":{"typography":{"fontSize":"clamp(3rem, 6vw, 5rem)","fontWeight":"300","lineHeight":"0.95"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-						<h2 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-size:clamp(3rem, 6vw, 5rem);font-weight:300;line-height:0.95">Copywriting<br>&amp; SEO</h2>
-						<!-- /wp:heading -->
+                    <!-- wp:paragraph {"className":"service-card__description"} -->
+                    <p class="service-card__description">
+                        A fast, modern website that looks professional, works properly and remains easy to maintain.
+                    </p>
+                    <!-- /wp:paragraph -->
 
-					</div>
-					<!-- /wp:group -->
+                    <!-- wp:group {"className":"service-tags","layout":{"type":"flex","flexWrap":"wrap"}} -->
+                    <div class="wp-block-group service-tags">
 
-					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.45"}},"fontSize":"medium"} -->
-					<p class="has-medium-font-size" style="line-height:1.45">Are you looking for professional copywriting and SEO assistance for better search performance? We offer <strong><u>a full range of optimisation techniques and content generation</u></strong>.</p>
-					<!-- /wp:paragraph -->
+                        <!-- wp:paragraph -->
+                        <p>Block themes</p>
+                        <!-- /wp:paragraph -->
 
-				</div>
-				<!-- /wp:group -->
+                        <!-- wp:paragraph -->
+                        <p>Responsive</p>
+                        <!-- /wp:paragraph -->
 
-			</div>
-			<!-- /wp:column -->
+                        <!-- wp:paragraph -->
+                        <p>Performance</p>
+                        <!-- /wp:paragraph -->
+
+                    </div>
+                    <!-- /wp:group -->
+
+                    <!-- wp:paragraph {"className":"service-card__link"} -->
+                    <p class="service-card__link">
+                        <a href="#contact">Discuss a website →</a>
+                    </p>
+                    <!-- /wp:paragraph -->
+
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:html -->
+                <div class="service-card__art" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
+                    aria-hidden="true">
+                    <img src="/wp-content/themes/dbwp-block/assets/images/pc.png" alt="" loading="lazy"
+                        decoding="async">
+                </div>
+                <!-- /wp:html -->
+
+            </div>
+            <!-- /wp:group -->
 
 
-			<!-- wp:column -->
-			<div class="wp-block-column">
+            <!-- wp:group {"className":"service-card service-card--development","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
+            <div
+                class="wp-block-group service-card service-card--development has-ink-color has-paper-background-color has-text-color has-background">
 
-				<!-- wp:group {"className":"service-card","backgroundColor":"paper","textColor":"ink","style":{"border":{"radius":"6px"},"dimensions":{"minHeight":"430px"},"spacing":{"padding":{"top":"var:preset|spacing|50","right":"var:preset|spacing|40","bottom":"var:preset|spacing|50","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"space-between"}} -->
-				<div class="wp-block-group service-card has-color-white has-text-color has-background" style="border-radius:6px;min-height:430px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--40)">
+                <!-- wp:paragraph {"className":"service-card__number"} -->
+                <p class="service-card__number">02 / DEVELOPMENT</p>
+                <!-- /wp:paragraph -->
 
-					<!-- wp:group {"layout":{"type":"default"}} -->
-					<div class="wp-block-group">
+                <!-- wp:heading {"level":3,"className":"service-card__title"} -->
+                <h3 class="wp-block-heading service-card__title">
+                    Fixes &amp;<br>Custom Plugins
+                </h3>
+                <!-- /wp:heading -->
 
-						<!-- wp:paragraph {"style":{"typography":{"fontSize":"clamp(2.5rem, 5vw, 4rem)","fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"bottom":"0.35em"}}}} -->
-						<p style="margin-bottom:0.35em;font-size:clamp(2.5rem, 5vw, 4rem);font-weight:300;line-height:1">04.</p>
-						<!-- /wp:paragraph -->
+                <!-- wp:paragraph {"className":"service-card__description"} -->
+                <p class="service-card__description">
+                    Practical help with broken functionality, awkward requirements and features that off-the-shelf
+                    plugins can’t quite handle.
+                </p>
+                <!-- /wp:paragraph -->
 
-						<!-- wp:heading {"style":{"typography":{"fontSize":"clamp(3rem, 6vw, 5rem)","fontWeight":"300","lineHeight":"0.95"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-						<h2 class="wp-block-heading" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-size:clamp(3rem, 6vw, 5rem);font-weight:300;line-height:0.95">WooCommerce<br>E-commerce</h2>
-						<!-- /wp:heading -->
+                <!-- wp:group {"className":"service-tags","layout":{"type":"flex","flexWrap":"wrap"}} -->
+                <div class="wp-block-group service-tags">
 
-					</div>
-					<!-- /wp:group -->
+                    <!-- wp:paragraph -->
+                    <p>Bug fixes</p>
+                    <!-- /wp:paragraph -->
 
-					<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.45"}},"fontSize":"medium"} -->
-					<p class="has-medium-font-size" style="line-height:1.45">Take your brand to the next level with a <strong><u>professional, stylish and search-optimised</u></strong> e-commerce website.</p>
-					<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>Custom code</p>
+                    <!-- /wp:paragraph -->
 
-				</div>
-				<!-- /wp:group -->
+                    <!-- wp:paragraph -->
+                    <p>Plugins</p>
+                    <!-- /wp:paragraph -->
 
-			</div>
-			<!-- /wp:column -->
+                </div>
+                <!-- /wp:group -->
 
-		</div>
-		<!-- /wp:columns -->
+                <!-- wp:paragraph {"className":"service-card__link"} -->
+                <p class="service-card__link">
+                    <a href="#contact">Discuss a problem →</a>
+                </p>
+                <!-- /wp:paragraph -->
 
-	</div>
-	<!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+
+            <!-- wp:group {"className":"service-card service-card--commerce","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
+            <div
+                class="wp-block-group service-card service-card--commerce has-ink-color has-paper-background-color has-text-color has-background">
+
+                <!-- wp:paragraph {"className":"service-card__number"} -->
+                <p class="service-card__number">03 / E-COMMERCE</p>
+                <!-- /wp:paragraph -->
+
+                <!-- wp:heading {"level":3,"className":"service-card__title"} -->
+                <h3 class="wp-block-heading service-card__title">
+                    WooCommerce
+                </h3>
+                <!-- /wp:heading -->
+
+                <!-- wp:paragraph {"className":"service-card__description"} -->
+                <p class="service-card__description">
+                    E-commerce design, development and improvements that make stores easier to browse, manage and buy
+                    from.
+                </p>
+                <!-- /wp:paragraph -->
+
+                <!-- wp:group {"className":"service-tags","layout":{"type":"flex","flexWrap":"wrap"}} -->
+                <div class="wp-block-group service-tags">
+
+                    <!-- wp:paragraph -->
+                    <p>Store design</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:paragraph -->
+                    <p>Checkout</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:paragraph -->
+                    <p>Automation</p>
+                    <!-- /wp:paragraph -->
+
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:paragraph {"className":"service-card__link"} -->
+                <p class="service-card__link">
+                    <a href="#contact">Discuss a store →</a>
+                </p>
+                <!-- /wp:paragraph -->
+
+            </div>
+            <!-- /wp:group -->
+
+
+            <!-- wp:group {"className":"service-card service-card--content","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
+            <div
+                class="wp-block-group service-card service-card--content has-ink-color has-paper-background-color has-text-color has-background">
+
+                <!-- wp:group {"className":"service-card__content-copy","layout":{"type":"default"}} -->
+                <div class="wp-block-group service-card__content-copy">
+
+                    <!-- wp:paragraph {"className":"service-card__number"} -->
+                    <p class="service-card__number">04 / CONTENT</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:heading {"level":3,"className":"service-card__title"} -->
+                    <h3 class="wp-block-heading service-card__title">
+                        Copywriting &amp; SEO
+                    </h3>
+                    <!-- /wp:heading -->
+
+                    <!-- wp:paragraph {"className":"service-card__description"} -->
+                    <p class="service-card__description">
+                        Clearer content and practical optimisation designed to help people find, understand and use your
+                        website.
+                    </p>
+                    <!-- /wp:paragraph -->
+
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:group {"className":"service-card__content-actions","layout":{"type":"default"}} -->
+                <div class="wp-block-group service-card__content-actions">
+
+                    <!-- wp:group {"className":"service-tags","layout":{"type":"flex","flexWrap":"wrap"}} -->
+                    <div class="wp-block-group service-tags">
+
+                        <!-- wp:paragraph -->
+                        <p>Copywriting</p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:paragraph -->
+                        <p>On-page SEO</p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:paragraph -->
+                        <p>Content planning</p>
+                        <!-- /wp:paragraph -->
+
+                    </div>
+                    <!-- /wp:group -->
+
+                    <!-- wp:paragraph {"className":"service-card__link"} -->
+                    <p class="service-card__link">
+                        <a href="#contact">Discuss your content →</a>
+                    </p>
+                    <!-- /wp:paragraph -->
+
+                </div>
+                <!-- /wp:group -->
+
+            </div>
+            <!-- /wp:group -->
+
+        </div>
+        <!-- /wp:group -->
+
+
+        <!-- wp:group {"className":"services-cta","backgroundColor":"accent","textColor":"ink","layout":{"type":"default"}} -->
+        <div
+            class="wp-block-group services-cta has-ink-color has-accent-background-color has-text-color has-background">
+
+            <!-- wp:group {"className":"services-cta__copy","layout":{"type":"default"}} -->
+            <div class="wp-block-group services-cta__copy">
+
+                <!-- wp:heading {"level":3} -->
+                <h3 class="wp-block-heading">
+                    Not sure where your problem fits?
+                </h3>
+                <!-- /wp:heading -->
+
+                <!-- wp:paragraph -->
+                <p>
+                    That’s fine. Tell me what’s going on and I’ll point you in the right direction.
+                </p>
+                <!-- /wp:paragraph -->
+
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons">
+
+                <!-- wp:button {"backgroundColor":"ink","textColor":"white"} -->
+                <div class="wp-block-button">
+                    <a class="wp-block-button__link has-white-color has-ink-background-color has-text-color has-background wp-element-button"
+                        href="#contact">
+                        Tell me what you need →
+                    </a>
+                </div>
+                <!-- /wp:button -->
+
+            </div>
+            <!-- /wp:buttons -->
+
+        </div>
+        <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
 
 </section>
 <!-- /wp:group -->
 
+<!-- wp:group {"tagName":"section","metadata":{"name":"Contact"},"anchor":"contact","align":"full","backgroundColor":"ink","textColor":"white","className":"contact-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<section id="contact"
+    class="wp-block-group alignfull contact-section has-white-color has-ink-background-color has-text-color has-background"
+    style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Contact"},"align":"full","backgroundColor":"ink","textColor":"white","className":"contact-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull contact-section has-white-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
+    <!-- wp:group {"align":"wide","className":"contact-layout","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide contact-layout">
 
-	<!-- wp:dbwp/contact-form {"align":"wide"} /-->
+        <!-- wp:group {"className":"contact-copy","layout":{"type":"default"}} -->
+        <div class="wp-block-group contact-copy">
+
+            <!-- wp:paragraph {"className":"contact-eyebrow"} -->
+            <p class="contact-eyebrow">Start a conversation</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:heading {"className":"contact-heading"} -->
+            <h2 class="wp-block-heading contact-heading">
+                Tell me what’s<br>going wrong.
+            </h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph {"className":"contact-intro","fontSize":"large"} -->
+            <p class="contact-intro has-large-font-size">
+                You don’t need to diagnose the problem or write a technical brief. Tell me what you’re trying to
+                achieve, what isn’t working and where you’re currently stuck.
+            </p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:group {"className":"contact-expectations","layout":{"type":"default"}} -->
+            <div class="wp-block-group contact-expectations">
+
+                <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
+                <div class="wp-block-group contact-expectation">
+
+                    <!-- wp:paragraph {"className":"contact-expectation__number"} -->
+                    <p class="contact-expectation__number">01</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:group {"layout":{"type":"default"}} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">Start with the messy version</h3>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>
+                            Explain it in your own words. Screenshots and links are useful, but technical jargon isn’t
+                            required.
+                        </p>
+                        <!-- /wp:paragraph -->
+
+                    </div>
+                    <!-- /wp:group -->
+
+                </div>
+                <!-- /wp:group -->
+
+
+                <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
+                <div class="wp-block-group contact-expectation">
+
+                    <!-- wp:paragraph {"className":"contact-expectation__number"} -->
+                    <p class="contact-expectation__number">02</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:group {"layout":{"type":"default"}} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">I’ll take a proper look</h3>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>
+                            I’ll review what you’ve sent and work out what the sensible next step is.
+                        </p>
+                        <!-- /wp:paragraph -->
+
+                    </div>
+                    <!-- /wp:group -->
+
+                </div>
+                <!-- /wp:group -->
+
+
+                <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
+                <div class="wp-block-group contact-expectation">
+
+                    <!-- wp:paragraph {"className":"contact-expectation__number"} -->
+                    <p class="contact-expectation__number">03</p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:group {"layout":{"type":"default"}} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="wp-block-heading">No-obligation quote</h3>
+                        <!-- /wp:heading -->
+
+                        <!-- wp:paragraph -->
+                        <p>
+                            If I can help, I’ll explain what’s involved and give you a clear quote before any work
+                            begins.
+                        </p>
+                        <!-- /wp:paragraph -->
+
+                    </div>
+                    <!-- /wp:group -->
+
+                </div>
+                <!-- /wp:group -->
+
+            </div>
+            <!-- /wp:group -->
+
+        </div>
+        <!-- /wp:group -->
+
+
+        <!-- wp:group {"className":"contact-form-panel","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
+        <div
+            class="wp-block-group contact-form-panel has-ink-color has-paper-background-color has-text-color has-background">
+
+            <!-- wp:group {"className":"contact-form-panel__header","layout":{"type":"default"}} -->
+            <div class="wp-block-group contact-form-panel__header">
+
+                <!-- wp:paragraph {"className":"contact-form-panel__label"} -->
+                <p class="contact-form-panel__label">Your enquiry</p>
+                <!-- /wp:paragraph -->
+
+                <!-- wp:heading {"level":3} -->
+                <h3 class="wp-block-heading">What can I help with?</h3>
+                <!-- /wp:heading -->
+
+                <!-- wp:paragraph -->
+                <p>
+                    Give me as much information as you have. You can always fill in the gaps later.
+                </p>
+                <!-- /wp:paragraph -->
+
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:dbwp/contact-form {"align":"wide"} /-->
+
+            <!-- wp:paragraph {"className":"contact-form-panel__note"} -->
+            <p class="contact-form-panel__note">
+                Your details will only be used to respond to your enquiry.
+            </p>
+            <!-- /wp:paragraph -->
+
+        </div>
+        <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
 
 </section>
 <!-- /wp:group -->

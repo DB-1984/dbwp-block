@@ -10,6 +10,13 @@ function dbwp_enqueue_styles() {
     );
 
     wp_enqueue_style(
+        'dbwp-fonts',
+        'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap',
+        [],
+        null
+    );
+
+    wp_enqueue_style(
         'dbwp-style',
         get_stylesheet_uri(),
         [ 'dbwp-fonts' ],
