@@ -46,6 +46,10 @@ Tags:
     opacity: 0.85;
 }
 
+.site-header {
+    background-color: #0f2324d1;
+}
+
 .sl-hero .site-header__nav a:hover {
     opacity: 1;
 }
@@ -90,7 +94,7 @@ Tags:
 
 @media (max-width: 600px) {
     .sl-hero .site-header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         gap: var(--wp--preset--spacing--20);
     }
@@ -149,9 +153,9 @@ Tags:
     overflow: hidden;
     background-color: #59786f;
     opacity: 0.8;
-    background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg);
-    background-position: 0 0, 8px 14px, 0 0, 8px 14px, 8px 0, 0 14px;
-    background-size: 16px 28px;
+    background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg);
+    background-position: 0 0, 23px 40px, 0 0, 23px 40px, 23px 0, 0 40px;
+    background-size: 46px 80px;
 }
 
 .services-shell {
@@ -559,12 +563,21 @@ Media/Text
 
 .contact-section {
     position: relative;
-    overflow: hidden;
 
-    background-color: #0f4343;
-    opacity: 0.8;
-    background-image: radial-gradient(circle at center center, #bacdc0, #0f4343), repeating-radial-gradient(circle at center center, #bacdc0, #bacdc0, 8px, transparent 16px, transparent 8px);
-    background-blend-mode: multiply;
+    /* 1. Top layer (contained image) 
+       2. Bottom layer (cover image) */
+    background-image:
+        url("assets/images/pc.png"),
+        url("assets/images/sky.png");
+
+    /* Top image stays contained; bottom stretches to cover */
+    background-size: contain, cover;
+
+    /* Center both images, or position them independently */
+    background-position: center center, center center;
+
+    /* Prevent repeating for both */
+    background-repeat: no-repeat, no-repeat;
 }
 
 .contact-layout {
@@ -819,7 +832,7 @@ Media/Text
     border-radius: 999px;
 
     background: var(--wp--preset--color--accent);
-    color: var(--wp--preset--color--ink);
+    color: white;
 
     font: inherit;
     font-family: var(--wp--preset--font-family--system-font);
@@ -1018,4 +1031,69 @@ Media/Text
     .contact-form-submit {
         width: 100%;
     }
+}
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+.site-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-footer__navigation {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.site-footer__navigation .wp-block-navigation-item__content {
+    color: rgba(255, 255, 255, 0.68);
+    text-decoration: none;
+    transition:
+        color 180ms ease,
+        translate 180ms ease;
+}
+
+.site-footer__navigation .wp-block-navigation-item__content:hover,
+.site-footer__navigation .wp-block-navigation-item__content:focus-visible {
+    color: var(--wp--preset--color--white);
+    translate: 0 -2px;
+}
+
+.site-footer__separator {
+    width: 100%;
+    margin-block: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
+    opacity: 0.2;
+}
+
+.site-footer__credit {
+    gap: 0.35em;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 1rem;
+}
+
+.site-footer__credit p,
+.site-footer__credit .wp-block-site-title {
+    margin: 0;
+    font: inherit;
+}
+
+.site-footer__credit .wp-block-site-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-footer__credit .wp-block-site-title a:hover {
+    color: var(--wp--preset--color--white);
+}
+
+@media (max-width: 600px) {
+    .site-footer__navigation .wp-block-navigation__container {
+        gap: 0.75rem 1.25rem;
+    }
+}
+
+/* Misc */
+body :where(.wp-site-blocks)>* {
+    margin-block-start: 0px !important
 }

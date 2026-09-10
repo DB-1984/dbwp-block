@@ -8,15 +8,15 @@
         <!-- wp:group {"className":"sl-hero__content","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|40","bottom":"var:preset|spacing|80","left":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
         <div class="wp-block-group sl-hero__content"
             style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--40)">
-            <!-- wp:image {"id":17,"width":"86px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image size-full is-resized"><img
+            <!-- wp:image {"id":17,"width":"86px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+            <figure class="wp-block-image aligncenter size-full is-resized"><img
                     src="/wp-content/themes/dbwp-block/assets/images/wp-logo-white.png" alt="" class="wp-image-17"
                     style="width:86px;height:auto" /></figure>
             <!-- /wp:image -->
 
-            <!-- wp:heading {"level":1,"className":"sl-hero__headline has-white-color has-text-color has-display-font-family","fontSize":"huge","fontFamily":"display"} -->
-            <h1
-                class="wp-block-heading sl-hero__headline has-white-color has-text-color has-display-font-family has-huge-font-size">
+            <!-- wp:heading {"level":1,"className":"sl-hero__headline has-white-color has-text-color has-display-font-family","style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80"}},"typography":{"textAlign":"center"}},"fontSize":"huge","fontFamily":"display"} -->
+            <h1 class="wp-block-heading has-text-align-center sl-hero__headline has-white-color has-text-color has-display-font-family has-huge-font-size"
+                style="padding-right:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--80)">
                 Shape Your Digital Landscape</h1>
             <!-- /wp:heading -->
 
@@ -25,8 +25,9 @@
                 describing what this page is about.</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","fontSize":"medium"} -->
-            <p class="sl-hero__cta has-white-color has-text-color has-medium-font-size"><a href="#">Learn more →</a></p>
+            <!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","style":{"typography":{"textAlign":"center"}},"fontSize":"medium"} -->
+            <p class="has-text-align-center sl-hero__cta has-white-color has-text-color has-medium-font-size"><a
+                    href="#services">Learn more →</a></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -35,10 +36,11 @@
 <!-- /wp:cover -->
 
 <!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"services-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"backgroundColor":"ink","textColor":"white","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull services-section has-white-color has-text-color has-background"
+<section
+    class="wp-block-group alignfull services-section has-white-color has-ink-background-color has-text-color has-background"
     style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
-    <!-- wp:group {"align":"wide","className":"services-shell","layout":{"type":"default"}} -->
-    <div class="wp-block-group alignwide services-shell">
+    <!-- wp:group {"align":"wide","className":"services-shell","layout":{"type":"default"},"anchor":"services"} -->
+    <div class="wp-block-group alignwide services-shell" id="services">
         <!-- wp:group {"className":"services-intro","layout":{"type":"default"}} -->
         <div class="wp-block-group services-intro">
             <!-- wp:group {"className":"services-intro__copy","layout":{"type":"default"}} -->
@@ -93,6 +95,12 @@
                     <p class="service-card__number">01 / DESIGN</p>
                     <!-- /wp:paragraph -->
 
+                    <!-- wp:image {"id":17,"width":"156px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
+                    <figure class="wp-block-image size-full is-resized"><img
+                            src="/wp-content/themes/dbwp-block/assets/images/wpwc.png" alt="" class="wp-image-17"
+                            style="width:300px;height:auto" /></figure>
+                    <!-- /wp:image -->
+
                     <!-- wp:heading {"level":3,"className":"service-card__title"} -->
                     <h3 class="wp-block-heading service-card__title">
                         WordPress<br>Site Design
@@ -127,14 +135,6 @@
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
-
-                <!-- wp:html -->
-                <div class="service-card__art" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"
-                    aria-hidden="true">
-                    <img src="/wp-content/themes/dbwp-block/assets/images/pc.png" alt="" loading="lazy"
-                        decoding="async">
-                </div>
-                <!-- /wp:html -->
             </div>
             <!-- /wp:group -->
 
@@ -190,7 +190,7 @@
 
                 <!-- wp:heading {"level":3,"className":"service-card__title"} -->
                 <h3 class="wp-block-heading service-card__title">
-                    WooCommerce
+                    Woo Commerce
                 </h3>
                 <!-- /wp:heading -->
 
@@ -315,10 +315,14 @@
 <!-- wp:group {"tagName":"section","metadata":{"name":"Contact"},"align":"full","className":"contact-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"backgroundColor":"ink","textColor":"white","layout":{"type":"constrained"},"anchor":"contact"} -->
 <section class="wp-block-group alignfull contact-section has-white-color has-text-color has-background" id="contact"
     style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
+
     <!-- wp:group {"align":"wide","className":"contact-layout","layout":{"type":"default"}} -->
     <div class="wp-block-group alignwide contact-layout">
+
         <!-- wp:group {"className":"contact-copy","layout":{"type":"default"}} -->
-        <div class="wp-block-group contact-copy"><!-- wp:paragraph {"className":"contact-eyebrow"} -->
+        <div class="wp-block-group contact-copy">
+
+            <!-- wp:paragraph {"className":"contact-eyebrow"} -->
             <p class="contact-eyebrow">Start a conversation</p>
             <!-- /wp:paragraph -->
 
@@ -337,14 +341,18 @@
 
             <!-- wp:group {"className":"contact-expectations","layout":{"type":"default"}} -->
             <div class="wp-block-group contact-expectations">
+
                 <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
                 <div class="wp-block-group contact-expectation">
+
                     <!-- wp:paragraph {"className":"contact-expectation__number"} -->
                     <p class="contact-expectation__number">01</p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"layout":{"type":"default"}} -->
-                    <div class="wp-block-group"><!-- wp:heading {"level":3} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
                         <h3 class="wp-block-heading">Start with the messy version</h3>
                         <!-- /wp:heading -->
 
@@ -361,12 +369,15 @@
 
                 <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
                 <div class="wp-block-group contact-expectation">
+
                     <!-- wp:paragraph {"className":"contact-expectation__number"} -->
                     <p class="contact-expectation__number">02</p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"layout":{"type":"default"}} -->
-                    <div class="wp-block-group"><!-- wp:heading {"level":3} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
                         <h3 class="wp-block-heading">I’ll take a proper look</h3>
                         <!-- /wp:heading -->
 
@@ -382,12 +393,15 @@
 
                 <!-- wp:group {"className":"contact-expectation","layout":{"type":"default"}} -->
                 <div class="wp-block-group contact-expectation">
+
                     <!-- wp:paragraph {"className":"contact-expectation__number"} -->
                     <p class="contact-expectation__number">03</p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"layout":{"type":"default"}} -->
-                    <div class="wp-block-group"><!-- wp:heading {"level":3} -->
+                    <div class="wp-block-group">
+
+                        <!-- wp:heading {"level":3} -->
                         <h3 class="wp-block-heading">No-obligation quote</h3>
                         <!-- /wp:heading -->
 
@@ -409,8 +423,10 @@
         <!-- wp:group {"className":"contact-form-panel","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
         <div
             class="wp-block-group contact-form-panel has-ink-color has-paper-background-color has-text-color has-background">
+
             <!-- wp:group {"className":"contact-form-panel__header","layout":{"type":"default"}} -->
             <div class="wp-block-group contact-form-panel__header">
+
                 <!-- wp:paragraph {"className":"contact-form-panel__label"} -->
                 <p class="contact-form-panel__label">Your enquiry</p>
                 <!-- /wp:paragraph -->
@@ -440,3 +456,5 @@
     <!-- /wp:group -->
 </section>
 <!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"dbwp-block"} /-->

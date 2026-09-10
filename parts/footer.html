@@ -1,11 +1,32 @@
-<!-- wp:group {"layout":{"inherit":true}} -->
-<div class="wp-block-group">
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"80px","bottom":"30px"}}}} -->
-	<div class="wp-block-group" style="padding-top:80px;padding-bottom:30px">
-		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center">Proudly Powered by <a href="https://wordpress.org" rel="nofollow">WordPress</a></p>
+<!-- wp:group {"tagName":"footer","align":"full","backgroundColor":"ink","textColor":"white","className":"site-footer","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|30","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30"}}},"layout":{"type":"constrained"}} -->
+<footer
+	class="wp-block-group alignfull site-footer has-white-color has-ink-background-color has-text-color has-background"
+	style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)">
+
+	<!-- wp:navigation {"overlayMenu":"never","className":"site-footer__navigation","layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
+	<!-- wp:navigation-link {"label":"Home","url":"/","kind":"custom"} /-->
+	<!-- wp:navigation-link {"label":"Services","url":"/#services","kind":"custom"} /-->
+	<!-- wp:navigation-link {"label":"How It Works","url":"/#how-it-works","kind":"custom"} /-->
+	<!-- wp:navigation-link {"label":"About","url":"/#about","kind":"custom"} /-->
+	<!-- wp:navigation-link {"label":"Contact","url":"/#contact","kind":"custom"} /-->
+	<!-- /wp:navigation -->
+
+	<!-- wp:separator {"backgroundColor":"white","className":"is-style-wide site-footer__separator"} -->
+	<hr
+		class="wp-block-separator has-text-color has-white-color has-alpha-channel-opacity has-white-background-color has-background is-style-wide site-footer__separator">
+	<!-- /wp:separator -->
+
+	<!-- wp:group {"className":"site-footer__credit","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
+	<div class="wp-block-group site-footer__credit">
+
+		<!-- wp:paragraph -->
+		<p>© 2026</p>
 		<!-- /wp:paragraph -->
+
+		<!-- wp:site-title {"level":0,"isLink":true} /-->
+
 	</div>
 	<!-- /wp:group -->
-</div>
+
+</footer>
 <!-- /wp:group -->
