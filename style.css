@@ -147,11 +147,18 @@ Tags:
 .services-section {
     position: relative;
     overflow: hidden;
+    background-color: #59786f;
+    opacity: 0.8;
+    background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #0f4343 0.5deg, #0f4343 119.5deg, transparent 119.5deg, transparent 120deg);
+    background-position: 0 0, 8px 14px, 0 0, 8px 14px, 8px 0, 0 14px;
+    background-size: 16px 28px;
 }
 
 .services-shell {
     display: grid;
     gap: clamp(2rem, 5vw, 5rem);
+    background-color: #000000de;
+    padding: 2em;
 }
 
 .services-intro {
@@ -554,22 +561,18 @@ Media/Text
     position: relative;
     overflow: hidden;
 
-    background-color: var(--wp--preset--color--ink);
-    background-image:
-        linear-gradient(rgb(0 0 0 / 45%),
-            rgb(0 0 0 / 45%)),
-        url("assets/images/sea.jpg");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #0f4343;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #bacdc0, #0f4343), repeating-radial-gradient(circle at center center, #bacdc0, #bacdc0, 8px, transparent 16px, transparent 8px);
+    background-blend-mode: multiply;
 }
 
 .contact-layout {
     display: grid;
     grid-template-columns:
         minmax(0, 0.85fr) minmax(380px, 1.15fr);
-
+    background-color: #020202a1;
+    padding: 2em;
     align-items: start;
     gap: clamp(3rem, 8vw, 9rem);
 }
