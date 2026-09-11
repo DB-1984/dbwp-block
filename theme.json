@@ -12,7 +12,7 @@
       "palette": [
         { "slug": "ink", "color": "#141414", "name": "Ink" },
         { "slug": "paper", "color": "#FBEEDB", "name": "Paper" },
-        { "slug": "accent", "color": "#77777d", "name": "Accent" },
+        { "slug": "accent", "color": "#5a8371", "name": "Accent" },
         { "slug": "white", "color": "#FFFFFF", "name": "White" }
       ]
     },

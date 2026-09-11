@@ -46,8 +46,8 @@ Tags:
     opacity: 0.85;
 }
 
-.site-header {
-    background-color: #0f2324d1;
+.hero-container {
+    background-color: #000000f0;
 }
 
 .sl-hero .site-header__nav a:hover {
@@ -61,7 +61,7 @@ Tags:
 }
 
 .sl-hero.wp-block-cover {
-    background-image: url('assets/images/mtn.jpg');
+    background-image: url('assets/images/lscape.png');
     background-size: cover;
     background-position: center;
     min-height: 100svh !important;
@@ -110,13 +110,14 @@ Tags:
     position: fixed;
     top: 0;
     z-index: 1000;
-
+    min-height: 4em;
     width: 100%;
     box-sizing: border-box;
     padding:
         var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
-
+    background-color: #0a2e3fe8;
     align-items: center;
+    align-content: center;
 }
 
 .site-header__logo a,
@@ -151,11 +152,10 @@ Tags:
 .services-section {
     position: relative;
     overflow: hidden;
-    background-color: #59786f;
-    opacity: 0.8;
-    background-image: conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 60deg at 56.25% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from 180deg at 43.75% calc(425% / 6), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg), conic-gradient(from -60deg at 50% calc(175% / 12), transparent 0deg, transparent 0.5deg, #ffffff 0.5deg, #ffffff 119.5deg, transparent 119.5deg, transparent 120deg);
-    background-position: 0 0, 23px 40px, 0 0, 23px 40px, 23px 0, 0 40px;
-    background-size: 46px 80px;
+    background-image: url("assets/images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .services-shell {
@@ -225,6 +225,15 @@ Tags:
     grid-column: span 7;
     grid-row: span 2;
     min-height: 750px;
+    background-image: url("assets/images/pc.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.with-bg {
+    background-color: #fbeedbd1;
+    ;
 }
 
 .service-card--development,
@@ -563,21 +572,11 @@ Media/Text
 
 .contact-section {
     position: relative;
-
-    /* 1. Top layer (contained image) 
-       2. Bottom layer (cover image) */
-    background-image:
-        url("assets/images/pc.png"),
-        url("assets/images/sky.png");
-
-    /* Top image stays contained; bottom stretches to cover */
-    background-size: contain, cover;
-
-    /* Center both images, or position them independently */
-    background-position: center center, center center;
-
-    /* Prevent repeating for both */
-    background-repeat: no-repeat, no-repeat;
+    overflow: hidden;
+    background-image: url("assets/images/sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact-layout {
@@ -831,8 +830,8 @@ Media/Text
     border: 2px solid var(--wp--preset--color--ink);
     border-radius: 999px;
 
-    background: var(--wp--preset--color--accent);
-    color: white;
+    background: transparent;
+    color: #1f1f1f;
 
     font: inherit;
     font-family: var(--wp--preset--font-family--system-font);
