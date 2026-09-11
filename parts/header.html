@@ -1,13 +1,45 @@
 <!-- wp:group {"tagName":"header","className":"site-header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+
 <header class="wp-block-group site-header">
 
-	<!-- wp:site-title {"className":"site-header__logo","fontSize":"medium"} /-->
+    <!-- wp:html -->
+    <a href="/" class="site-header__logo" aria-label="DBWP home">
+        <span class="site-header__wordmark">DBWP</span>
 
-	<!-- wp:navigation {"className":"site-header__nav","overlayMenu":"mobile","overlayBackgroundColor":"ink","overlayTextColor":"white","fontSize":"small","layout":{"type":"flex","justifyContent":"right"}} -->
-	<!-- wp:navigation-link {"label":"Work","url":"/work"} /-->
-	<!-- wp:navigation-link {"label":"About","url":"/about"} /-->
-	<!-- wp:navigation-link {"label":"Contact","url":"/contact"} /-->
-	<!-- /wp:navigation -->
+        <svg
+            class="site-header__mark"
+            width="32"
+            height="24"
+            viewBox="0 0 48 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+        >
+            <path
+                d="M4 6L14 16L4 26"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+            />
+            <path
+                d="M22 26H42"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="square"
+            />
+        </svg>
+    </a>
+    <!-- /wp:html -->
+
+    <!-- wp:navigation {"className":"site-header__nav","overlayMenu":"mobile","overlayBackgroundColor":"ink","overlayTextColor":"white","fontSize":"small","layout":{"type":"flex","justifyContent":"right"}} -->
+    
+    <!-- wp:navigation-link {"label":"Work","url":"/work"} /-->
+    <!-- wp:navigation-link {"label":"About","url":"/about"} /-->
+    <!-- wp:navigation-link {"label":"Contact","url":"/contact"} /-->
+
+    <!-- /wp:navigation -->
 
 </header>
+
 <!-- /wp:group -->

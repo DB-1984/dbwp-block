@@ -88,8 +88,10 @@ Tags:
 }
 
 .sl-hero__cta a {
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 0.3em;
+    border: 3px solid currentColor;
+    padding: .5em;
 }
 
 @media (max-width: 600px) {
@@ -124,6 +126,11 @@ Tags:
 .site-header__logo {
     text-decoration: none;
     font-weight: 500;
+}
+
+.sl-hero .site-header__logo a{
+    font-style: oblique!important;
+    letter-spacing: .25em;
 }
 
 .site-header__nav a {
@@ -228,7 +235,7 @@ Tags:
     background-image: url("assets/images/pc.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: max(475px);
 }
 
 .with-bg {
