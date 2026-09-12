@@ -265,6 +265,7 @@ Tags:
 .service-card--commerce *,
 .service-card--development * {
     background-color: #f9edd8e8;
+    padding: .25em;
 }
 
 .service-card--content {
@@ -285,8 +286,6 @@ Tags:
     display: flex;
     flex: 1;
     flex-direction: column;
-
-    max-width: 60%;
 }
 
 .service-card__number {
