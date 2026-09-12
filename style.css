@@ -50,8 +50,16 @@ Tags:
     background-color: #000000f0;
 }
 
+.sl-hero {
+    margin-top: 0px !important;
+}
+
 .sl-hero .site-header__nav a:hover {
     opacity: 1;
+}
+
+.sl-hero .sl-hero__cta>a:hover {
+    transform: translateX(2px) !important;
 }
 
 .sl-hero__content {
@@ -128,9 +136,10 @@ Tags:
     font-weight: 500;
 }
 
-.sl-hero .site-header__logo a {
+.sl-hero .site-header__logo {
     font-style: oblique !important;
-    letter-spacing: .25em;
+    letter-spacing: .5em;
+    font-weight: 900 !important;
 }
 
 .site-header__nav a {
@@ -1119,4 +1128,22 @@ Footer
 /* Misc */
 body :where(.wp-site-blocks)>* {
     margin-block-start: 0px !important
+}
+
+div#modal-1 {
+    background-color: #0a2e3fe8 !important;
+}
+
+/* Reposition it when the WordPress mobile menu is open */
+html.has-modal-open .site-header__logo {
+    position: fixed;
+    top: clamp(1.5rem, 4vw, 3rem);
+    left: clamp(1.5rem, 6vw, 5rem);
+    z-index: 100001;
+    color: var(--wp--preset--color--white);
+}
+
+li.wp-block-navigation-item.wp-block-navigation-link {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5em
 }
