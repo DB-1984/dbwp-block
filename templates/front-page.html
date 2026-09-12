@@ -1,7 +1,7 @@
-<!-- wp:cover {"dimRatio":30,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","align":"full","className":"sl-hero","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<div class="wp-block-cover alignfull sl-hero"
+<!-- wp:cover {"dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":100,"minHeightUnit":"vh","isDark":false,"align":"full","className":"sl-hero","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<div class="wp-block-cover alignfull is-light sl-hero"
     style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:100vh"><span aria-hidden="true"
-        class="wp-block-cover__background hero-container has-background-dim-60"></span>
+        class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span>
     <div class="wp-block-cover__inner-container">
         <!-- wp:template-part {"slug":"header","theme":"dbwp-block","tagName":"header"} /-->
 
@@ -20,13 +20,14 @@
                 Shape Your Digital Landscape</h1>
             <!-- /wp:heading -->
 
-            <!-- wp:paragraph {"className":"sl-hero__subhead has-white-color has-text-color","fontSize":"large"} -->
-            <p class="sl-hero__subhead has-white-color has-text-color has-large-font-size">One supporting sentence
-                describing what this page is about.</p>
+            <!-- wp:paragraph {"className":"sl-hero__subhead has-white-color has-text-color","style":{"typography":{"textAlign":"center"}},"fontSize":"large"} -->
+            <p class="has-text-align-center sl-hero__subhead has-white-color has-text-color has-large-font-size">
+                WordPress/WooCommerce site creation &amp; technical support, with no surprises.</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","style":{"typography":{"textAlign":"center"}},"fontSize":"medium"} -->
-            <p class="has-text-align-center sl-hero__cta has-white-color has-text-color has-medium-font-size"><a
+            <!-- wp:paragraph {"className":"sl-hero__cta has-white-color has-text-color","style":{"typography":{"textAlign":"center"},"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"fontSize":"medium"} -->
+            <p class="has-text-align-center sl-hero__cta has-white-color has-text-color has-medium-font-size"
+                style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"><a
                     href="#services">Learn more →</a></p>
             <!-- /wp:paragraph -->
         </div>
@@ -36,7 +37,8 @@
 <!-- /wp:cover -->
 
 <!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"services-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|30","bottom":"var:preset|spacing|80","left":"var:preset|spacing|30"}}},"backgroundColor":"ink","textColor":"white","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull services-section has-white-color has-text-color has-background"
+<section
+    class="wp-block-group alignfull services-section has-white-color has-ink-background-color has-text-color has-background"
     style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--30)">
     <!-- wp:group {"align":"wide","className":"services-shell","layout":{"type":"default"},"anchor":"services"} -->
     <div class="wp-block-group alignwide services-shell" id="services">
@@ -88,7 +90,7 @@
             <!-- wp:group {"className":"service-card service-card\u002d\u002dfeatured","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
             <div
                 class="wp-block-group service-card service-card--featured has-ink-color has-paper-background-color has-text-color has-background">
-                <!-- wp:group {"className":"service-card__content","layout":{"type":"default"}} -->
+                <!-- wp:group {"className":"service-card__content with-bg","layout":{"type":"default"}} -->
                 <div class="wp-block-group service-card__content with-bg">
                     <!-- wp:paragraph {"className":"service-card__number"} -->
                     <p class="service-card__number">01 / DESIGN</p>
@@ -133,7 +135,7 @@
 
             <!-- wp:group {"className":"service-card service-card\u002d\u002ddevelopment","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
             <div
-                class="wp-block-group service-card service-card--development has-ink-color has-paper-background-color has-text-color has-background">
+                class="wp-block-group service-card service-card--development has-ink-color has-paper-background-color has-text-color has-background fixes">
                 <!-- wp:paragraph {"className":"service-card__number"} -->
                 <p class="service-card__number">02 / DEVELOPMENT</p>
                 <!-- /wp:paragraph -->
@@ -176,7 +178,7 @@
 
             <!-- wp:group {"className":"service-card service-card\u002d\u002dcommerce","backgroundColor":"paper","textColor":"ink","layout":{"type":"default"}} -->
             <div
-                class="wp-block-group service-card service-card--commerce has-ink-color has-paper-background-color has-text-color has-background">
+                class="wp-block-group service-card service-card--commerce has-ink-color has-paper-background-color has-text-color has-background woo">
                 <!-- wp:paragraph {"className":"service-card__number"} -->
                 <p class="service-card__number">03 / E-COMMERCE</p>
                 <!-- /wp:paragraph -->
@@ -319,14 +321,14 @@
             <p class="contact-eyebrow">Start a conversation</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:heading {"className":"contact-heading"} -->
-            <h2 class="wp-block-heading contact-heading">
+            <!-- wp:heading {"level":3,"className":"contact-heading","fontSize":"x-large"} -->
+            <h3 class="wp-block-heading contact-heading has-x-large-font-size">
                 Tell me what’s<br>going wrong.
-            </h2>
+            </h3>
             <!-- /wp:heading -->
 
-            <!-- wp:paragraph {"className":"contact-intro","fontSize":"large"} -->
-            <p class="contact-intro has-large-font-size">
+            <!-- wp:paragraph {"className":"contact-intro","fontSize":"medium"} -->
+            <p class="contact-intro has-medium-font-size">
                 You don’t need to diagnose the problem or write a technical brief. Tell me what you’re trying to
                 achieve, what isn’t working and where you’re currently stuck.
             </p>

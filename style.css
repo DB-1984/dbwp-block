@@ -90,8 +90,8 @@ Tags:
 .sl-hero__cta a {
     text-decoration: none;
     text-underline-offset: 0.3em;
-    border: 3px solid currentColor;
-    padding: .5em;
+    padding: .75em;
+    background-color: #13232a;
 }
 
 @media (max-width: 600px) {
@@ -128,8 +128,8 @@ Tags:
     font-weight: 500;
 }
 
-.sl-hero .site-header__logo a{
-    font-style: oblique!important;
+.sl-hero .site-header__logo a {
+    font-style: oblique !important;
     letter-spacing: .25em;
 }
 
@@ -235,17 +235,36 @@ Tags:
     background-image: url("assets/images/pc.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: max(475px);
+    background-size: cover
+}
+
+.woo {
+    background-image: url("assets/images/woo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fixes {
+    background-image: url("assets/images/plugin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .with-bg {
-    background-color: #fbeedbd1;
-    ;
+    background-color: #0ad0d5e8;
+    padding: 2em;
 }
 
 .service-card--development,
 .service-card--commerce {
     grid-column: span 5;
+}
+
+.service-card--commerce *,
+.service-card--development * {
+    background-color: #f9edd8e8;
 }
 
 .service-card--content {
@@ -281,7 +300,6 @@ Tags:
 
 .service-card__title {
     margin-block: clamp(2rem, 5vw, 5rem) 1.25rem;
-
     font-size: clamp(2.4rem, 5vw, 5.5rem);
     line-height: 0.92;
     letter-spacing: -0.045em;

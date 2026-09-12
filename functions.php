@@ -23,6 +23,29 @@ function dbwp_enqueue_styles() {
         wp_get_theme()->get( 'Version' )
     );
 
+    wp_enqueue_style(
+        'aos',
+        get_theme_file_uri( '/assets/vendor/css/aos.css' ),
+        [],
+        '2.3.4'
+    );
+
+    wp_enqueue_script(
+        'aos',
+        get_theme_file_uri( '/assets/vendor/js/aos.js' ),
+        [],
+        '2.3.4',
+        true
+    );
+
+    wp_enqueue_script(
+        'main',
+        get_theme_file_uri( '/assets/js/main.js' ),
+        [ 'aos' ],
+        wp_get_theme()->get( 'Version' ),
+        true
+    );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'dbwp_enqueue_styles' );
