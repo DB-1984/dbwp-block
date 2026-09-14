@@ -25,14 +25,14 @@ function dbwp_enqueue_styles() {
 
     wp_enqueue_style(
         'aos',
-        get_theme_file_uri( '/assets/vendor/css/aos.css' ),
+        get_theme_file_uri( '/assets/aos/css/aos.css' ),
         [],
         '2.3.4'
     );
 
     wp_enqueue_script(
         'aos',
-        get_theme_file_uri( '/assets/vendor/js/aos.js' ),
+        get_theme_file_uri( '/assets/aos/js/aos.js' ),
         [],
         '2.3.4',
         true
