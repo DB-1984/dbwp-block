@@ -60,7 +60,7 @@ Tags:
 
 .sl-hero .sl-hero__cta>a:hover {
     background: white;
-    color:  #13232a;
+    color: #13232a;
 }
 
 .sl-hero__content {
@@ -1146,5 +1146,5 @@ html.has-modal-open .site-header__logo {
 
 li.wp-block-navigation-item.wp-block-navigation-link {
     font-family: 'Fraunces', sans-serif;
-    font-size: 1.25em
+    font-size: 1.5em
 }

@@ -1,7 +1,7 @@
 <?php
 add_action('init', function () {
 	register_block_type(
-		get_theme_file_path('/blocks/contact-form/build')
+		get_theme_file_path('/build/contact-form')
 	);
 });
 

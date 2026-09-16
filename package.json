@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "wp-scripts build --source-path=blocks/contact-form/src --output-path=blocks/contact-form/build --webpack-copy-php",
-    "start": "wp-scripts start --source-path=blocks/contact-form/src --output-path=blocks/contact-form/build --webpack-copy-php"
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
   },
   "dependencies": {
     "@wordpress/scripts": "^34.2.0"
