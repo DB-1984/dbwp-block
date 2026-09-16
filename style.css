@@ -1144,7 +1144,13 @@ html.has-modal-open .site-header__logo {
     color: var(--wp--preset--color--white);
 }
 
-li.wp-block-navigation-item.wp-block-navigation-link {
-    font-family: 'Fraunces', sans-serif;
-    font-size: 1.25em
+/* Desktop navigation links */
+.site-header__nav .wp-block-navigation-item__content {
+    font-family: "Fraunces", sans-serif;
+    font-size: var(--wp--preset--font-size--small);
+}
+
+/* Mobile overlay links */
+.site-header__nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+    font-size: var(--wp--preset--font-size--large);
 }
